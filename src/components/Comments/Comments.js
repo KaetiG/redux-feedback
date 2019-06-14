@@ -10,4 +10,8 @@ class Comments extends Component {
     }
 }
 
-export default Comments;
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState: reduxState,
+  })
+  
+  export default connect(mapReduxStateToProps)(Comments);

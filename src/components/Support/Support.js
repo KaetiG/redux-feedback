@@ -10,4 +10,8 @@ class Support extends Component {
     }
 }
 
-export default Support;
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState: reduxState,
+  })
+  
+  export default connect(mapReduxStateToProps)(Support);

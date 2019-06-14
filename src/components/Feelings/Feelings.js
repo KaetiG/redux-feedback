@@ -10,4 +10,8 @@ class Feelings extends Component {
     }
 }
 
-export default Feelings;
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState: reduxState,
+  })
+  
+  export default connect(mapReduxStateToProps)(Feelings);

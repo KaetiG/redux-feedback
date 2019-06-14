@@ -10,4 +10,8 @@ class Understanding extends Component {
     }
 }
 
-export default Understanding;
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState: reduxState,
+  })
+  
+  export default connect(mapReduxStateToProps)(Understanding);
