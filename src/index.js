@@ -4,5 +4,18 @@ import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//redux is the store (giant object) and react-redux is the connection 
+import { applyMiddleware, createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import { logger } from 'redux-logger';
+
+const storeInstance = createStore(
+    //this is a reducer- it is a function that runs every time an action is dispatched 
+        combineReducers({
+          //reducer/s
+        }),
+        applyMiddleware(logger)
+    );
+
+ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

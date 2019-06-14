@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import Feelings from '../Feelings/Feelings'
+import Understanding from '../Understanding/Understanding'
+import Support from '../Support/Support'
+import Comments from '../Comments/Comments'
+import Review from '../Review/Review'
 
 class App extends Component {
   render() {
@@ -11,6 +16,7 @@ class App extends Component {
           <h4><i>Don't forget it!</i></h4>
         </header>
         <br/>
+        <Feelings />
         {/* ROUTES TO COMPONENTS/PAGES */}
       </div>
     );

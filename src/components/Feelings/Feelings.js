@@ -5,6 +5,11 @@ class Feelings extends Component {
     render() {
         return (
             <>
+                <label>Feeling?</label>
+                    <br />
+                <input type="number" min="0" max="5"></input>
+                <br />
+                <button>Next</button>
             </>
         )
     }
