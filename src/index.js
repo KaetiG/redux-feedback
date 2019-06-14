@@ -9,10 +9,18 @@ import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { logger } from 'redux-logger';
 
+const feedbackReducer = (state = [], action) => {
+    if (action.type === 'ADD_FEEDBACK'){
+        return [...state, action.payload]
+    }
+    return state;
+}
+
 const storeInstance = createStore(
     //this is a reducer- it is a function that runs every time an action is dispatched 
         combineReducers({
           //reducer/s
+        feedbackReducer,
         }),
         applyMiddleware(logger)
     );
