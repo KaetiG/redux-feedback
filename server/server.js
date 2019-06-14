@@ -9,7 +9,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-
+const feedbackRouter = require('./routers/feedback.router.js');
+app.use('/feedback', feedbackRouter);
+//am I supposed to use '/' or something like '/feedback'??
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
