@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { HashRouter as Router, Link } from 'react-router-dom';
 
 class Support extends Component {
     state = {
@@ -14,10 +13,11 @@ class Support extends Component {
     }
     handleFeelings = () => {
         this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state.support })
+        this.props.history.push('/comments');
     }
     render() {
         return (
-            <Router>
+            <>
                 <label>Supported?</label>
                 <br />
                 <input type="number"
@@ -27,9 +27,9 @@ class Support extends Component {
                     value={this.state.support}>
                 </input>
                 <br />
-                <button onClick={this.handleSupport}><Link to="/support">Next</Link></button>
-                {/* need id, onClick */}
-            </Router>
+                <button onClick={this.handleSupport}>Next</button>
+               
+            </>
         )
     }
 }
