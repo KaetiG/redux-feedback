@@ -13,7 +13,7 @@ state = {
         })
     }
     handleFeelings = () => {
-        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.props.feelings})
+        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.state.feelings})
     }
     render() {
         return (
@@ -29,7 +29,6 @@ state = {
                 <br />
                 <button onClick={this.handleFeelings}><Link to="/understanding">Next</Link></button>
                 {/* need id, onClick */}
-                {/* need to get reducer to stop being undefined (only returns length) */}
             </Router>
         )
     }
