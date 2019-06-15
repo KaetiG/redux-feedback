@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import axios from 'axios';
 import './App.css';
+import Home from '../Home/Home'
 import Feelings from '../Feelings/Feelings'
 import Understanding from '../Understanding/Understanding'
 import Support from '../Support/Support'
@@ -19,7 +20,7 @@ class App extends Component {
           <h4><i>Don't forget it!</i></h4>
         </header>
         <br />
-        <Feelings />
+        
         {/* ROUTES TO COMPONENTS/PAGES */}
         <Route path="/" exact component={Home}></Route>
         <Route path="/feelings" component={Feelings}></Route>
