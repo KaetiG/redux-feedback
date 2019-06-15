@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ReviewView from '../ReviewView/ReviewView'
 
 class Comments extends Component {
     state = {
@@ -29,7 +30,7 @@ class Comments extends Component {
                 </textarea>
                 <br />
                 <button onClick={this.handleComments}>Next</button>
-
+                <ReviewView />
             </>
         )
     }

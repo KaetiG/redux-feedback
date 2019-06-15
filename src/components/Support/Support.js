@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ReviewView from '../ReviewView/ReviewView'
 
 class Support extends Component {
     state = {
@@ -29,7 +30,7 @@ class Support extends Component {
                 </input>
                 <br />
                 <button onClick={this.handleSupport}>Next</button>
-               
+                <ReviewView />
             </>
         )
     }

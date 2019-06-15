@@ -32,6 +32,10 @@ ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.get
 registerServiceWorker();
 
 ///////////TO DO////////////
-//make new review component
+//make new review component -DONE
+//---fine tune it------//////
 ////////ternary^^^^
 //make radio buttons
+//style with css or material UI
+//comment out code
+//UPDATE READ ME FILE???!!?!?!?!
