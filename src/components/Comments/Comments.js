@@ -12,7 +12,7 @@ class Comments extends Component {
         })
     }
     handleComments = () => {
-        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state.comments })
+        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state })
         this.props.history.push('/review');
     }
     render() {

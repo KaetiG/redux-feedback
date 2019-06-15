@@ -11,8 +11,7 @@ app.use(bodyParser.json()); // needed for angular requests
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('build'));
 
-
-//POST ROUTE --- REMOVE GET UNTIL STRETCH
+/** ---------- EXPRESS ROUTES ---------- **/
 
 app.post('/', (req, res) =>{
     console.log(req.body);
@@ -29,10 +28,6 @@ app.post('/', (req, res) =>{
     res.sendStatus(200);
     
 })
-/** ---------- EXPRESS ROUTES ---------- **/
-// const feedbackRouter = require('./routers/feedback.router.js');
-// app.use('/feedback', feedbackRouter);
-//am I supposed to use '/' or something like '/feedback'??
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {

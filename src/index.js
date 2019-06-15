@@ -9,12 +9,12 @@ import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { logger } from 'redux-logger';
 
-const feedbackReducer = (state = [], action) => {
+const feedbackReducer = (state = {}, action) => {
     if (action.type === 'ADD_FEEDBACK'){
         console.log(action.payload)
-        return [...state, action.payload]
+        return {...state, ...action.payload}
     }else if (action.type === 'CLEAR_FEEDBACK') {
-        return [];
+        return {};
     } 
     return state;
 }
@@ -30,3 +30,8 @@ const storeInstance = createStore(
 
 ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
+
+///////////TO DO////////////
+//make new review component
+////////ternary^^^^
+//make radio buttons

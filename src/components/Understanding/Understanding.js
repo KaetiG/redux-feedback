@@ -12,7 +12,7 @@ class Understanding extends Component {
         })
     }
     handleKnowledge = () => {
-        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state.understanding })
+        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state })
         this.props.history.push('/support');
     }
     render() {

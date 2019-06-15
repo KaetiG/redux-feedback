@@ -13,7 +13,7 @@ state = {
         })
     }
     handleFeelings = () => {
-        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.state.feeling})
+        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.state})
         this.props.history.push('/understanding');
     }
     render() {

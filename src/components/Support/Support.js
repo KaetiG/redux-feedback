@@ -12,7 +12,7 @@ class Support extends Component {
         })
     }
     handleSupport = () => {
-        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state.support })
+        this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state })
         this.props.history.push('/comments');
     }
     render() {
