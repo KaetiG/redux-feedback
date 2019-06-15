@@ -18,13 +18,14 @@ class Comments extends Component {
     render() {
         return (
             <>
-                <label>Supported?</label>
+                <label>Comments/Concerns?</label>
                 <br />
                 <textarea type="text"
                     rows="8"
                     cols="70"
-                    onChange={this.handletextareaComments}
-                    value={this.state.Comments}>
+                    onChange={this.handleInputComments}
+                    value={this.state.comments}
+                    key={'comments'}>
                 </textarea>
                 <br />
                 <button onClick={this.handleComments}>Next</button>

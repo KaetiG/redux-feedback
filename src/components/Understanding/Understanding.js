@@ -24,7 +24,8 @@ class Understanding extends Component {
                     min="1"
                     max="5"
                     onChange={this.handleInputKnowledge}
-                    value={this.state.understanding}>
+                    value={this.state.understanding}
+                    key={'understanding'}>
                 </input>
                 <br />
                 <button onClick={this.handleKnowledge}>Next</button>

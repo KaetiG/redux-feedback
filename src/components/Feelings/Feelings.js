@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 
 class Feelings extends Component {
 state = {
-    feelings: 1,
+    feeling: 1,
     }
 
     handleInputFeelz = (event) => {
         this.setState({
-            feelings: event.target.value
+            feeling: event.target.value
         })
     }
     handleFeelings = () => {
-        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.state.feelings})
+        this.props.dispatch({type: 'ADD_FEEDBACK', payload: this.state.feeling})
         this.props.history.push('/understanding');
     }
     render() {
@@ -25,7 +25,8 @@ state = {
                     min="1" 
                     max="5" 
                     onChange={this.handleInputFeelz}
-                    value={this.state.feelings}>
+                    value={this.state.feeling}
+                    key={'feelings'}>
                 </input>
                 <br />
                 <button onClick={this.handleFeelings}>Next</button>

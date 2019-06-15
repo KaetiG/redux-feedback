@@ -11,7 +11,7 @@ class Support extends Component {
             support: event.target.value
         })
     }
-    handleFeelings = () => {
+    handleSupport = () => {
         this.props.dispatch({ type: 'ADD_FEEDBACK', payload: this.state.support })
         this.props.history.push('/comments');
     }
@@ -24,7 +24,8 @@ class Support extends Component {
                     min="1"
                     max="5"
                     onChange={this.handleInputSupport}
-                    value={this.state.support}>
+                    value={this.state.support}
+                    key={'support'}>
                 </input>
                 <br />
                 <button onClick={this.handleSupport}>Next</button>
