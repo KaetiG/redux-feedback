@@ -1,9 +1,18 @@
+body {
+  background-color: #E5E5BE;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-header {
-  background-color: #033076;
+  background: #003973; 
+  background: -webkit-linear-gradient(to top, #E5E5BE, #003973); 
+  background: linear-gradient(to top, #E5E5BE, #003973); 
+  
+
   min-height: 70px;
   padding: 20px;
   color: white;
@@ -15,5 +24,41 @@
 
 .App-intro {
   font-size: large;
+}
+
+button {
+  background-color: #003973;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  margin: auto;
+  padding: 8px;
+}
+button:active {
+    opacity: .75;
+    transform: translateY(2px);
+    outline: none;
+    margin: auto;
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  border-collapse: collapse;
+  border: solid 2px;
+  font-size: 12pt;
+}
+
+td.feedbackType {
+  text-align: left;
 }
 

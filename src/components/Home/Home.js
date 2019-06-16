@@ -5,7 +5,7 @@ class Home extends Component {
         return (
             <>
                 <h1>Welcome!</h1>
-                <button onClick={() => {this.props.history.push('/feelings')}}>Next</button>
+                <button onClick={() => {this.props.history.push('/feelings')}}>Start</button>
             </>   
             
         )

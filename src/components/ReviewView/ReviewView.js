@@ -23,23 +23,42 @@ class ReviewView extends Component {
     render() {
         return (
             <>
-
-                <h2>Review!</h2>
-                <h3>How You're Feeling: {this.props.reduxState.feedbackReducer.feeling}</h3>
-                <h3>I Understand This Much: {this.props.reduxState.feedbackReducer.understanding}</h3>
-                <h3>How Supported Are You?: {this.props.reduxState.feedbackReducer.support}</h3>
-                <h3>Comments/Concerns: {this.props.reduxState.feedbackReducer.comments}</h3>
+            <h2 className='reviewText'>Review!</h2>
+            <table className='center'>
+                <thead>
+                    <tr>
+                        {/* <th>Review</th> */}
+                    </tr>
+                    <tr>
+                        <td className='feedbackType'>I'm Feeling:</td>
+                        <td> {this.props.reduxState.feedbackReducer.feeling}</td>
+                    </tr>
+                    <tr>
+                    <td className='feedbackType'>I Understand:</td>
+                        <td> {this.props.reduxState.feedbackReducer.understanding}</td>
+                    </tr>
+                    <tr>
+                    <td className='feedbackType'>I'm Supported:</td>
+                        <td> {this.props.reduxState.feedbackReducer.support}</td>
+                    </tr>
+                    <tr>
+                    <td className='feedbackType'>Comments/Concerns:</td>
+                        <td> {this.props.reduxState.feedbackReducer.comments}</td>
+                    </tr>
+                </thead>
+            </table>
+            <br />
                 
                 {this.props.location.pathname === '/feelings' 
                 || this.props.location.pathname === '/understanding' 
                 || this.props.location.pathname === '/support'
                 || this.props.location.pathname === '/comments' ?
                     <>
-                        <button disabled>Incomplete</button>
+                        <button disabled>Incomplete</button><br />
                     </>
                     :
                     <>
-                        <button onClick={this.handleSubmit}>Submit</button>
+                        <button onClick={this.handleSubmit}>Submit</button><br />
                     </>
                 }
 

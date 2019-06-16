@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
 import './App.css';
+//-------------COMPONENTS--------------//
 import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Feelings from '../Feelings/Feelings'
@@ -9,7 +9,7 @@ import Support from '../Support/Support'
 import Comments from '../Comments/Comments'
 import Review from '../Review/Review'
 
-
+//------------ROUTER-------------//
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
         <Header />
         <br />
         
-        {/* ROUTES TO COMPONENTS/PAGES */}
+        {/* ------ROUTES TO COMPONENTS/PAGES------ */}
         <Route path="/" exact component={Home}></Route>
         <Route path="/feelings" component={Feelings}></Route>
         <Route path="/understanding" component={Understanding}></Route>
