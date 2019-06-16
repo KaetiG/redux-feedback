@@ -28,7 +28,7 @@ class Support extends Component {
                     value={this.state.support}
                     key={'support'}>
                 </input>
-                <br />
+                <br /><br />
                 <button onClick={this.handleSupport}>Next</button>
                 <ReviewView />
             </>

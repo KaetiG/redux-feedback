@@ -23,12 +23,12 @@ class Comments extends Component {
                 <br />
                 <textarea type="text"
                     rows="8"
-                    cols="70"
+                    cols="55"
                     onChange={this.handleInputComments}
                     value={this.state.comments}
                     key={'comments'}>
                 </textarea>
-                <br />
+                <br /><br />
                 <button onClick={this.handleComments}>Next</button>
                 <ReviewView />
             </>

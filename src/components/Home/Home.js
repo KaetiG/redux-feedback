@@ -4,8 +4,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <h1>Welcome!</h1>
-                <button onClick={() => {this.props.history.push('/feelings')}}>Start</button>
+            <button className='startButton' onClick={() => {this.props.history.push('/feelings')}}>Start</button>
             </>   
             
         )

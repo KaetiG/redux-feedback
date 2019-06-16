@@ -34,6 +34,7 @@ button {
   border-radius: 12px;
   margin: auto;
   padding: 8px;
+  font-size: 16pt;
 }
 button:active {
     opacity: .75;
@@ -42,9 +43,17 @@ button:active {
     margin: auto;
 }
 
+button.startButton {
+  font-size: 24pt;
+}
+
 table.center {
   margin-left:auto; 
   margin-right:auto;
+  border-collapse: collapse;
+  border: solid 2px;
+  border-color: #003973;
+  background-color: rgb(255, 255, 226);
 }
 
 th {
@@ -55,10 +64,15 @@ td {
   text-align: center;
   border-collapse: collapse;
   border: solid 2px;
+  border-color: #003973;
   font-size: 12pt;
 }
 
 td.feedbackType {
   text-align: left;
+}
+
+textarea {
+  outline: none;
 }
 

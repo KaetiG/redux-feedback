@@ -28,7 +28,7 @@ class Understanding extends Component {
                     value={this.state.understanding}
                     key={'understanding'}>
                 </input>
-                <br />
+                <br /><br />
                 <button onClick={this.handleKnowledge}>Next</button>
                 <ReviewView />
             </>
