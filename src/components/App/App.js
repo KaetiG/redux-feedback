@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import axios from 'axios';
 import './App.css';
+import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Feelings from '../Feelings/Feelings'
 import Understanding from '../Understanding/Understanding'
@@ -16,10 +17,7 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Feedback!</h1>
-          <h4><i>Don't forget it!</i></h4>
-        </header>
+        <Header />
         <br />
         
         {/* ROUTES TO COMPONENTS/PAGES */}

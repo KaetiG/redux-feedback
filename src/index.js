@@ -34,7 +34,7 @@ registerServiceWorker();
 ///////////TO DO////////////
 //make new review component -DONE
 //---fine tune it------//////
-////////ternary^^^^
+////////ternary^^^^ ----DONE
 //make radio buttons
 //style with css or material UI
 //comment out code

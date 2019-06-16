@@ -5,6 +5,7 @@ import { withRouter } from 'react-router';
 
 
 class ReviewView extends Component {
+    
     handleSubmit = () => {
         //POST ROUTE
         axios({
@@ -28,7 +29,19 @@ class ReviewView extends Component {
                 <h3>I Understand This Much: {this.props.reduxState.feedbackReducer.understanding}</h3>
                 <h3>How Supported Are You?: {this.props.reduxState.feedbackReducer.support}</h3>
                 <h3>Comments/Concerns: {this.props.reduxState.feedbackReducer.comments}</h3>
-                <button onClick={this.handleSubmit}>Submit Feedback</button>
+                
+                {this.props.location.pathname === '/feelings' 
+                || this.props.location.pathname === '/understanding' 
+                || this.props.location.pathname === '/support'
+                || this.props.location.pathname === '/comments' ?
+                    <>
+                        <button disabled>Incomplete</button>
+                    </>
+                    :
+                    <>
+                        <button onClick={this.handleSubmit}>Submit</button>
+                    </>
+                }
 
             </>
         )
