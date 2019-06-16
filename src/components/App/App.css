@@ -47,6 +47,10 @@ button.startButton {
   font-size: 24pt;
 }
 
+button.incompleteButton {
+  opacity: .55;
+}
+
 table.center {
   margin-left:auto; 
   margin-right:auto;

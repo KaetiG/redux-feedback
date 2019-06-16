@@ -19,8 +19,7 @@ class Support extends Component {
     render() {
         return (
             <>
-                <label>Supported?</label>
-                <br />
+                <h3>How Supported Do You Feel?</h3>
                 <input type="number"
                     min="1"
                     max="5"

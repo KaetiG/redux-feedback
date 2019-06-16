@@ -19,8 +19,7 @@ class Comments extends Component {
     render() {
         return (
             <>
-                <label>Comments/Concerns?</label>
-                <br />
+                <h3>Do You Have Any Comments/Concerns?</h3>
                 <textarea type="text"
                     rows="8"
                     cols="55"

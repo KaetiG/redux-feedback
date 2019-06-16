@@ -19,8 +19,7 @@ class Understanding extends Component {
     render() {
         return (
             <>
-                <label>Do You Understand?</label>
-                <br />
+                <h3>How Well Are You Understanding?</h3>
                 <input type="number"
                     min="1"
                     max="5"

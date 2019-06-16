@@ -54,7 +54,7 @@ class ReviewView extends Component {
                 || this.props.location.pathname === '/support'
                 || this.props.location.pathname === '/comments' ?
                     <>
-                        <button disabled>Incomplete</button><br />
+                        <button className='incompleteButton' disabled>Incomplete</button><br />
                     </>
                     :
                     <>

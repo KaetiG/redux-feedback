@@ -11,10 +11,9 @@ handleStartOver = () => {
     render() {
         return (
             <header className="App-header">
-                <h1 className="App-title">Feedback!</h1>
-                <h3><i>Don't forget it!</i></h3>
+            <h1>Feedback! Feedback!</h1>
                 {this.props.location.pathname === '/' ?
-                <p>click "start" to begin!</p>
+                <h2>click "start" to begin!</h2>
                 :
                 <button onClick={this.handleStartOver}>Start Over?</button>}
             </header>
