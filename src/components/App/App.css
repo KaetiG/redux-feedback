@@ -11,8 +11,6 @@ body {
   background: #003973; 
   background: -webkit-linear-gradient(to top, #E5E5BE, #003973); 
   background: linear-gradient(to top, #E5E5BE, #003973); 
-  
-
   min-height: 70px;
   padding: 20px;
   color: white;
@@ -78,5 +76,19 @@ td.feedbackType {
 
 textarea {
   outline: none;
+  background-color: rgb(255, 255, 226);
+  border-radius: 5px;
+  border-color: #003973;
+}
+
+input {
+  outline: none;
+  width: 45px;
+  height: 22px;
+  background-color: rgb(255, 255, 226);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14pt;
 }
 
