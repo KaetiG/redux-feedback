@@ -80,6 +80,10 @@ Display all of the existing feedback at the route `/admin`. The most recently ad
 ### OTHER FEATURES
 
 - Update this README.md to describe the project in your own words
+this project we created a web application with multiple pages
+using redux we stored inputs entered in redux state until finally submitting those entries to the database using POST requests
+then finally the redux state is emptied so that the user can start over
 - Improve the styling of the app using Material-UI theme, cards, snackbars, buttons, nav bar, and icons, and anything else you'd like.
+ooooof I didn't see the Material UI part until now.....(sunday night) 
 - Add the ability to flag an existing feedback entry for further review on the /admin view
 - Deploy your project to Heroku -- you'll need to read the special instructions for building and deploying with these apps! 
