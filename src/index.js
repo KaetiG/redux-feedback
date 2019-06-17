@@ -44,6 +44,7 @@ const storeInstance = createStore( //creates the store (massive object)
 
 ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
 //allows us to use redux / access the store from anywhere within App
+//Provider is a component with the prop "store" 
 registerServiceWorker();
 
 ///////////TO DO////////////
