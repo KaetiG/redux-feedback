@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+//literally all there is here is the start button and the import/export :P
 class Home extends Component {
     render() {
         return (

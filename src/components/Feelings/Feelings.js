@@ -27,8 +27,8 @@ class Feelings extends Component {
             <>
                 <h3>How Are You Feeling?</h3>
                 <input type="number"
-                    min="1"
-                    max="5"
+                    min="1" //sets minimum to 1
+                    max="5" //sets maximum to 5 (since we are only rating between 1 and 5)
                     onChange={this.handleInputFeelz}
                     value={this.state.feeling}
                     key={'feelings'}>
@@ -45,5 +45,6 @@ class Feelings extends Component {
 const mapReduxStateToProps = (reduxState) => ({
     reduxState: reduxState,
 })
-
+//------above code allows us to access the reduxState---------//
+//-------we need this, the below code, and the top "connect" import in order to dispatch actions back to our feedback reducer
 export default connect(mapReduxStateToProps)(Feelings);
